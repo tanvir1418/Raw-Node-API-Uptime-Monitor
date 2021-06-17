@@ -16,5 +16,6 @@
   // cursor
   "editor.cursorSmoothCaretAnimation": true,
   "editor.cursorBlinking": "expand",
-  "files.eol": "\n"
+  "files.eol": "\n",
+  "explorer.compactFolders": false
 }
