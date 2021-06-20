@@ -9,10 +9,15 @@
 const http = require('http');
 const { handleReqRes } = require('./helpers/handleReqRes');
 const environment = require('./helpers/environments');
-const data = require('./lib/data');
+const { sendTwilioSms } = require('./helpers/notifications');
 
 // app object - module scaffolding
 const app = {};
+
+// testing for sending sms by twilio
+sendTwilioSms('01738372627', 'Hello this message is sent by twilio', (err) => {
+    console.log('This is the error: ', err);
+});
 
 // testing file system
 // // File Handling: Create File
